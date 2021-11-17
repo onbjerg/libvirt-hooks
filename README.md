@@ -10,6 +10,16 @@ make install
 
 ### Hooks
 
-There are currently only two hooks. One of them auto-switches my monitor input to the VM on boot (and the opposite on shutdown) using DDC.
+Each hook must be configured separately.
 
-The other one starts Scream for sound, and kills Scream when the VM is shut down.
+#### Scream
+
+This hook starts and stops Scream with the VM.
+
+#### Monitor
+
+This hook switches display inputs when the VM boots and shuts down.
+
+#### USB Hotplugging
+
+This script lives outside of the hooks directory and runs based on udev rules (see [udev](./udev)) to attach and detach USB devices while the VM is running.

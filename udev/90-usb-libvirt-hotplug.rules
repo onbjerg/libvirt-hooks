@@ -1,0 +1,6 @@
+#
+# Replace these with your own rules. I have left mine as an example.
+#
+
+# Logitech G920 wheel
+SUBSYSTEM=="usb", ENV{ID_VENDOR_ID}=="046d", ENV{ID_MODEL_ID}=="c262", RUN+="/opt/usb-libvirt-hotplug/usb-libvirt-hotplug.sh win11"
